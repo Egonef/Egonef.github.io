@@ -1,0 +1,26 @@
+body{
+    background-color:#1f1f1f;
+    color: rgb(237, 237, 237);
+    display: grid;
+    justify-content: center;
+}
+
+header{
+    position: fixed;
+    color: #1f1f1f;
+    background-color: #e35050;
+    height: 4rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+main{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+main section{
+    margin-top: 3rem;
+}
