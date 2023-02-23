@@ -1,26 +1,84 @@
 body{
-    background-color:#1f1f1f;
+    background-color:#393939;
     color: rgb(237, 237, 237);
-    display: grid;
     justify-content: center;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header{
     position: fixed;
     color: #1f1f1f;
     background-color: #e35050;
-    height: 4rem;
+    height: 10vh;
     width: 100%;
     top: 0;
     left: 0;
     text-align: center;
+    z-index: 99999;
+    box-shadow:  0px 2px 3px ;
 }
 
 main{
+    position: relative;
     margin-top: 4rem;
     text-align: center;
+
 }
 
 main section{
-    margin-top: 3rem;
+    color: #1f1f1f;
+    border-radius: 4px;
+    height: 90vh;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.seccion1{
+    background-color:#e35050;
+}
+
+.seccion2{
+    background-color:#8350e3;
+}
+
+.seccion3{
+    background-color:#50e386;
+}
+
+
+footer{
+    color: #1f1f1f;
+    background-color: #e35050;
+    height: 2rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99999;
+}
+
+/*//////////////// MEDIA QUERIES\\\\\\\\\\\*/
+
+/* Estilos para pantallas de hasta 767px */
+@media (max-width: 767px) {
+  /* Estilos para elementos de la página */
+}
+
+/* Estilos para pantallas de entre 768px y 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para elementos de la página */
+}
+
+/* Estilos para pantallas de entre 992px y 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos para elementos de la página */
+}
+
+/* Estilos para pantallas de 1200px o más */
+@media (min-width: 1200px) {
+  /* Estilos para elementos de la página */
 }
