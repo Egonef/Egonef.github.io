@@ -1,5 +1,5 @@
 body{
-    background-color:#393939;
+    background-color:#48466D;
     color: rgb(237, 237, 237);
     justify-content: center;
     margin: 0;
@@ -10,55 +10,167 @@ body::-webkit-scrollbar {
 }
 
 header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    text-shadow: 0px 3px #181823;
     position: fixed;
-    color: #1f1f1f;
-    background-color: #e35050;
-    height: 10vh;
+    color: #d1faff;
+    background-color: #181823;
+    height: 5rem;
     width: 100%;
     top: 0;
     left: 0;
     text-align: center;
     z-index: 99999;
-    box-shadow:  0px 2px 3px ;
 }
 
 main{
-    position: relative;
     margin-top: 4rem;
-    text-align: center;
-
 }
 
 main section{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Arvo', serif;
     color: #1f1f1f;
     border-radius: 4px;
-    height: 90vh;
+    height: 86vh;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 5rem;
 }
 
 .seccion1{
-    background-color:#e35050;
+    background-color:#46CDCF;
 }
 
+.cuadrados {
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrado {
+    color: #d1faff;
+    width: 60%;
+    height: 15rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    transform: scale(0);
+    justify-content: center;
+}
+
+.cuadrado.escondiendose1 {
+    animation: desplazamiento_out 0.7s ease-in-out 0s 1 normal forwards;
+}
+
+.cuadrado.mostrando1 {
+    position: absolute;
+    justify-self: center;
+    transform: scale(1);
+    background-color: #1f1f1f;
+    animation: desplazamiento 0.7s ease-in-out 0s 1 normal forwards;
+}
+
+.slider_button{
+
+    height: 5rem;
+    width: 5%;
+    margin: 1%;
+    background-color: transparent;
+    background-image: url(arrow.png);
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    border-width: 0;
+    transform: scaleX(-1);
+    transform: rotate(90deg);
+}
+
+.cuadrado1 {
+background-color:#1f1f1f ;
+}
+
+.cuadrado2 {
+background-color: #1f1f1f ;
+}
+
+.cuadrado3 {
+background-color: #1f1f1f ;
+}
+
+
 .seccion2{
-    background-color:#8350e3;
+    background-color:#3D84A8;
 }
 
 .seccion3{
-    background-color:#50e386;
+    background-color:#ABEDD8;
 }
 
+.bar{
+    margin: 10% 10%;
+    background-color: #3D84A8;
+    height: 1rem;
+    width: 80%;
+    border-radius: 10px;
+}
 
-footer{
-    color: #1f1f1f;
-    background-color: #e35050;
-    height: 2rem;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    z-index: 99999;
+.bar2{
+    animation: barra 2s ease-in-out 0s 1 normal forwards;
+}
+
+.bar2.cpp{
+    background-color: #e8e8e8;
+    transform: translateY(0.09rem);
+    margin-left: 0.1rem;
+    height: 0.8rem;
+    width: 80%;
+    border-radius: 10px;
+}
+/*////////////////ANIMATIONS\\\\\\\\\\\*/
+
+@keyframes desplazamiento {
+    0%{
+        transform: scaleY(0);
+        transform-origin: 0% 100%;
+    }
+
+    100%{
+        transform: scaleY(1);
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes barra {
+    0%{
+        transform: scaleX(0);
+        transform-origin: 0% 0%;
+    }
+
+    100%{
+        transform: scaleY(1);
+        transform: translateY(0.09rem);
+        transform-origin: 0% 0%;
+    }
+}
+
+@keyframes desplazamiento_out {
+    0%{
+        position: absolute;
+        justify-self: center;
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+
+    99%{
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
+
+    100%{
+        transform: scaleY(0);
+        transform-origin: 100% 0%;
+    }
 }
 
 /*//////////////// MEDIA QUERIES\\\\\\\\\\\*/
@@ -66,6 +178,7 @@ footer{
 /* Estilos para pantallas de hasta 767px */
 @media (max-width: 767px) {
   /* Estilos para elementos de la página */
+    
 }
 
 /* Estilos para pantallas de entre 768px y 991px */
