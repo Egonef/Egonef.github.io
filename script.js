@@ -1,7 +1,12 @@
 const cuadrados = document.querySelectorAll(".cuadrado");
 const siguiente = document.getElementById('siguiente');
+
 const title = document.getElementById('title');
 
+
+
+
+//SEC 1 SLIDER//////////////////////////////////////
 
 let num = 0;
 let sem = 0;
@@ -26,5 +31,8 @@ siguiente.addEventListener('click',function(){
     color(num);
 });
 
-
 color(num);
+
+//////////////////////////////////////////////////////////
+
+

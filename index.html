@@ -13,12 +13,12 @@
     </header>
     <body>
         <div class="scroll-cont">
-            <div class="scroll 1"></div>
-            <div class="scroll 2"></div>
-            <div class="scroll 3"></div>
+            <button class="scroll sec1 selected" id="sec1" onclick="scroll1()"></button>
+            <button class="scroll sec2" id="sec2" onclick="scroll2()"></button>
+            <button class="scroll sec3" id="sec3" onclick="scroll3()"></button>
         </div>
         <main>
-            <section class="seccion1">
+            <section class="seccion1" id="seccion1">
                 <h2 id="title" >Never stop learning</h2>
                 <p>I am a Computer Science Student in the University of Cordoba, Spain.</p>
                 <p>The languages they teach us in collegue have to be limited, however, there are plenty of other technologies that I learn in my free time.</p>
@@ -50,15 +50,16 @@
                 </div>
                 <button id="siguiente" class="slider_button siguiente" ></button>
             </section>
-            <section class="seccion2">
+            <section class="seccion2" id="seccion2">
                 <h2>Sección 2</h2>
                 <p>Contenido de la sección 2</p>
             </section>
-            <section class="seccion3">
+            <section class="seccion3" id="seccion3">
                 <h2>Sección 3</h2>
                 <p>Contenido de la sección 3</p>
             </section>
         </main>
         <script src="script.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>
