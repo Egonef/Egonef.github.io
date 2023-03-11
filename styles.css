@@ -24,6 +24,15 @@ header{
     z-index: 99999;
 }
 
+.scroll-cont{
+    position: fixed;
+    transform: translateY(5rem) translateX(0.1rem);
+    background-color: #181823;
+    width: 1rem;
+    height: 70%;
+    border-radius: 9px;
+}
+
 main{
     margin-top: 4rem;
 }
@@ -115,16 +124,28 @@ background-color: #1f1f1f ;
 }
 
 .bar2{
-    animation: barra 2s ease-in-out 0s 1 normal forwards;
-}
-
-.bar2.cpp{
     background-color: #e8e8e8;
     transform: translateY(0.09rem);
     margin-left: 0.1rem;
     height: 0.8rem;
-    width: 80%;
     border-radius: 10px;
+    animation: barra 2s ease-in-out 0s 1 normal forwards;
+}
+
+.bar2.cpp{
+    width: 70%;
+}
+
+.bar2.htmlcss{
+    width: 90%;
+}
+
+.bar2.js{
+    width: 20%;
+}
+
+.bar2.python{
+    width: 40%;
 }
 /*////////////////ANIMATIONS\\\\\\\\\\\*/
 
