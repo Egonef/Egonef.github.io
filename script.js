@@ -3,7 +3,9 @@ const siguiente = document.getElementById('siguiente');
 
 const title = document.getElementById('title');
 
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
 
 
 //SEC 1 SLIDER//////////////////////////////////////

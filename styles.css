@@ -73,6 +73,21 @@ main section{
     background-color:#46CDCF;
 }
 
+.sec1wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec1text{
+    margin-left: 2rem;
+}
+
+.gifsec1{
+    height: 25rem;
+    width: 25rem;
+    transform: translateY(-5rem);
+}
+
 .cuadrados {
     display: flex;
     justify-content: center;
@@ -107,7 +122,7 @@ main section{
     width: 5rem;
     margin: 1%;
     background-color: transparent;
-    background-image: url(arrow.png);
+    background-image: url(assets/arrow.png);
     background-size: 5rem;
     background-repeat: no-repeat;
     border-width: 0;
@@ -130,7 +145,7 @@ background-color: #1f1f1f ;
 
 
 .seccion2{
-    background-color:#3D84A8;
+    background-color:#52aedc;
 }
 
 .seccion3{
