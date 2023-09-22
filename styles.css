@@ -246,23 +246,94 @@ background-color: #1f1f1f ;
 }
 /*//////////////// MEDIA QUERIES\\\\\\\\\\\*/
 
-/* Estilos para pantallas de hasta 767px */
+/* Styles for screens smaller than 768px */
 @media (max-width: 767px) {
-  /* Estilos para elementos de la página */
-    
-}
-
-/* Estilos para pantallas de entre 768px y 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Estilos para elementos de la página */
-}
-
-/* Estilos para pantallas de entre 992px y 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Estilos para elementos de la página */
-}
-
-/* Estilos para pantallas de 1200px o más */
-@media (min-width: 1200px) {
-  /* Estilos para elementos de la página */
-}
+    header {
+      font-size: 1.5rem;
+    }
+    .gifsec1 {
+      height: 15rem;
+      width: 15rem;
+    }
+    .cuadrados {
+      flex-direction: column;
+    }
+    .cuadrado {
+      width: 90%;
+      margin-top: 1rem;
+      height: 10rem;
+    }
+    .bar {
+      margin: 5% 10%;
+      width: 80%;
+    }
+  }
+  
+  /* Styles for screens between 768px and 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    header {
+      font-size: 1.8rem;
+    }
+    .gifsec1 {
+      height: 20rem;
+      width: 20rem;
+    }
+    .cuadrados {
+      flex-direction: column;
+    }
+    .cuadrado {
+      width: 80%;
+      margin-top: 1rem;
+      height: 12rem;
+    }
+    .bar {
+      margin: 5% 10%;
+      width: 80%;
+    }
+  }
+  
+  /* Styles for screens between 992px and 1199px */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    header {
+      font-size: 2rem;
+    }
+    .gifsec1 {
+      height: 25rem;
+      width: 25rem;
+    }
+    .cuadrados {
+      flex-direction: row;
+    }
+    .cuadrado {
+      width: 40%;
+      margin-top: 1rem;
+      height: 15rem;
+    }
+    .bar {
+      margin: 10% 10%;
+      width: 80%;
+    }
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    header {
+      font-size: 2.5rem;
+    }
+    .gifsec1 {
+      height: 30rem;
+      width: 30rem;
+    }
+    .cuadrados {
+      flex-direction: row;
+    }
+    .cuadrado {
+      width: 30%;
+      margin-top: 1rem;
+      height: 20rem;
+    }
+    .bar {
+      margin: 10% 10%;
+      width: 80%;
+    }
+  }
