@@ -267,6 +267,20 @@ background-color: #1f1f1f ;
       margin: 5% 10%;
       width: 80%;
     }
+    /* Adjust the font size and line height of the text in section 1 */
+    .sec1text p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    /* Adjust the font size of the titles in section 2 */
+    .cuadrado h2 {
+      font-size: 1.2rem;
+    }
+    /* Adjust the font size of the text in section 2 */
+    .seccion2 p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
   }
   
   /* Styles for screens between 768px and 991px */
