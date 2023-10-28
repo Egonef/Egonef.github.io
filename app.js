@@ -1,4 +1,13 @@
+import { Vue } from 'vue';
+
+const a = false;
+
+if (!a) {
+    presentacion.value = 'No es verdad';
+}
+
 var app = new Vue({
+    
     el: '#app',
     data: {
         presentacion: 'Bienvenido a mi portafolio personal. Soy un desarrollador web con experiencia en HTML, CSS, JavaScript y PHP. Me apasiona crear sitios web y aplicaciones que sean atractivos y fáciles de usar.',
