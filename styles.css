@@ -1,0 +1,77 @@
+body{
+    background-color: #222222;
+    color: #e9e1f4;
+    font-family: 'FiraCode', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/*************** HEADER ***************/
+header{
+    background-color: rgb(216, 193, 240);
+    color: #ececec;
+    font-family: 'FiraCode', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+    box-shadow: #080808 0px 0px 20px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+
+    margin-right: 20px; /* Ajusta este valor según tus necesidades */
+}
+nav ul li a {
+    color: #202020;
+    text-decoration: none;
+}
+
+/*************** MAIN ***************/
+
+h1{
+    font-size: 5rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+#subt1 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+#subt2 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: 1rem;
+
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Path: Proyectos/Portfolio/Egonef.github.io/styles.css */
